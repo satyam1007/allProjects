@@ -4,88 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./myImage.jpeg">
+  <link rel="icon" href="./profileImg.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>Satyam Mishra</title>
-  <style>
-    body {
-      background: #e6e6e6;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div class="container">
-    <div class="row" style="margin-left: 5%;">
-      <div class="col-md-6">
-        <div class="overflow-hidden position-sticky top-0 px-2">
-          <div class="d-flex align-items-center justify-content-between">
-            <div class="leftDashboard mt-5">
+<body class="bg-gray-100">
+  <div class="mx-auto py-10 px-2">
+    <div class="flex flex-wrap justify-center gap-10">
+      <!-- Left Profile Section -->
+      <div class="w-full md:w-1/3 bg-white shadow-lg rounded-lg p-6">
+        <div class="flex flex-col items-center">
+          <img src="./profileImg.png" alt="Satyam Mishra"
+            class="rounded-full object-cover w-36 h-36 border-4 border-gray-300 shadow-md">
+          <h3 class="text-2xl font-bold mt-4">Satyam Mishra</h3>
 
-              <img src="./myImage.jpeg" alt="" class="rounded-circle object-fit-cover" width="150px" height="150px">
-              <h3 class="fw-bold mt-4">Satyam Mishra</h3>
+          <p class="text-gray-600 mt-2">
+            <i class="fas fa-location-dot mr-2"></i>
+            Haryana, Hisar
+          </p>
+          <p class="text-gray-600 mt-2">
+            <i class="fa-solid fa-chalkboard-user mr-2"></i>
+            Learning Programming
+          </p>
+          <p class="text-gray-600 mt-2 text-center">
+            <i class="fa-solid fa-bullseye mr-2"></i>
+            Focusing on learning React.JS and JavaScript for frontend projects.
+          </p>
 
-              <p class="fw-bold mb-2 text-secondary">
-                <i class="fas fa-location-dot"></i>
-                <span class="">Haryana,Hisar</span>
-              </p>
-              <p class="fw-bold text-secondary mb-2">
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <span class="">Learning Programming</span>
-              </p>
-              <p class="fw-bold text-secondary mb-2">
-                <i class="fa-solid fa-bullseye"></i>
-                Focusing on learning React.JS and JavaScript for frontend projects.
-              </p>
-
-              <p class="mt-5">
-                <a href="https://github.com/satyam1007" target="_blank" class="text-black h3"><i
-                    class="fa-brands fa-github"></i></a>
-                <a href="" target="_blank" class="text-black h3 ms-5"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="" target="_blank" class="text-black h3 ms-5"><i class="fa-brands fa-twitter"></i></a>
-              </p>
-            </div>
+          <!-- Social Links -->
+          <div class="mt-6 flex justify-center space-x-6">
+            <a href="https://github.com/satyam1007" target="_blank" class="text-black text-2xl">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="text-black text-2xl">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-black text-2xl">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </div>
         </div>
       </div>
-      <div class="col-md-6 mt-5" style="max-height: 100vh; overflow-y: auto;">
-        <div class="d-flex gap-5 flex-wrap">
-          <div class="card" style="width: 90%;">
-            <img src="./Github-Clone.png" class="card-img-top" alt="searchGithubProfile">
-            <div class="card-body">
-              <h5 class="card-title">Search Github Profile</h5>
-              <p class="card-text">Find GitHub profiles effortlessly and explore repositories with ease.</p>
-              <a href="https://react-search-github-profile.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+
+      <!-- Projects Section -->
+      <div class="w-full md:w-2/3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Project Card -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./Github-Clone.png" alt="Search Github Profile" class="w-full h-54 object-cover">
+            <div class="p-6">
+              <h5 class="text-lg font-semibold">Search Github Profile</h5>
+              <p class="text-gray-600 mt-2">Find GitHub profiles effortlessly and explore repositories with ease.</p>
+              <a href="https://react-search-github-profile.vercel.app/" target="_blank"
+                class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">View</a>
             </div>
           </div>
-          <div class="card" style="width: 90%;">
-            <img src="./WeatherApp.png" class="card-img-top" alt="Weather-App">
-            <div class="card-body">
-              <h5 class="card-title">Weather App</h5>
-              <p class="card-text">Stay updated with real-time weather information using our Weather App.</p>
-              <a href="https://react-weather-app-beta-fawn.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+
+          <!-- Project Card -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./WeatherApp.png" alt="Weather App" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h5 class="text-lg font-semibold">Weather App</h5>
+              <p class="text-gray-600 mt-2">Stay updated with real-time weather information using our Weather App.</p>
+              <a href="https://react-weather-app-beta-fawn.vercel.app/" target="_blank"
+                class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">View</a>
             </div>
           </div>
-          <div class="card" style="width: 90%;">
-            <img src="./todoApp.png" class="card-img-top" alt="Todo-App">
-            <div class="card-body">
-              <h5 class="card-title">Todo App</h5>
-              <p class="card-text">"Effortlessly organize tasks with our intuitive Todo App. Stay productive, stay
-                organized. Try it now!"</p>
-              <a href="https://react-todo-app-eight-mu.vercel.app/" target="_blank" class="btn btn-primary">View</a>
+
+          <!-- Project Card -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./todoApp.png" alt="Todo App" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h5 class="text-lg font-semibold">Todo App</h5>
+              <p class="text-gray-600 mt-2">Effortlessly organize tasks with our intuitive Todo App.</p>
+              <a href="https://react-todo-app-eight-mu.vercel.app/" target="_blank"
+                class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">View</a>
+            </div>
+          </div>
+
+          <!-- Project Card -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./quiz-app.png" alt="Quiz App" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h5 class="text-lg font-semibold">Quiz App</h5>
+              <p class="text-gray-600 mt-2">Test your knowledge with this interactive Quiz App.</p>
+              <a href="https://quiz-app-eight-tawny-71.vercel.app/" target="_blank"
+                class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">View</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-
 </body>
 
 </html>
